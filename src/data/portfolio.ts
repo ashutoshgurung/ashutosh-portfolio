@@ -7,7 +7,7 @@ import netflixImg from "@/assets/project-netflix.jpg";
 export const profile = {
   name: "Ashutosh Gurung",
   role: "Flutter Developer",
-  email: "ashutoshgurung17.com", // TODO: replace with your real email
+  email: "ashutoshgurung17@gmail.com", // TODO: replace with your real email
   github: "https://github.com/ashutoshgurung/", // TODO: replace with your GitHub profile
   linkedin: "https://www.linkedin.com/in/ashutosh-gurung-a14ab1353/", // TODO: replace with your LinkedIn profile
   resumeUrl: "/resume.pdf", // TODO: drop your PDF at public/resume.pdf
