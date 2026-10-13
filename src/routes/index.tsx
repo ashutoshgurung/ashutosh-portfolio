@@ -12,7 +12,7 @@ import { Footer } from "@/components/portfolio/Footer";
 
 const title = "Ashutosh Gurung — Flutter Developer";
 const description =
-  "Portfolio of Ashutosh Gurung, a BCIS student building clean, responsive mobile apps with Flutter, Dart, Firebase and a focus on thoughtful design.";
+  "Portfolio of Ashutosh Gurung, a Flutter Developer focused on clean, responsive cross-platform mobile apps using Flutter, Dart, Firebase, REST APIs, and modern app architecture.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -34,7 +34,17 @@ export const Route = createFileRoute("/")({
           "@type": "Person",
           name: "Ashutosh Gurung",
           jobTitle: "Flutter Developer",
-          knowsAbout: ["Flutter", "Dart", "Firebase", "Cloud Firestore", "Firebase Auth", "Google Sign-In", "Hive", "Design"],
+          knowsAbout: [
+            "Flutter",
+            "Dart",
+            "Firebase",
+            "REST APIs",
+            "Laravel",
+            "MVVM",
+            "Clean Architecture",
+            "BLoC Architecture",
+            "Local Storage",
+          ],
         }),
       },
     ],

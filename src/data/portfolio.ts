@@ -1,14 +1,14 @@
 import foodImg from "@/assets/project-food-ordering.jpg";
-import ecommerceImg from "@/assets/project-ecommerce.jpg";
 import spotifyImg from "@/assets/project-spotify.jpg";
+import ecommerceImg from "@/assets/project-ecommerce.jpg";
 import newsImg from "@/assets/project-news.jpg";
-import futsalImg from "@/assets/project-futbook.jpg";
+import netflixImg from "@/assets/project-netflix.jpg";
 
 export const profile = {
   name: "Ashutosh Gurung",
   role: "Flutter Developer",
-  email: "ashutoshgurung17@gmail.com", // TODO: replace with your real email
-  github: "https://github.com/ashutoshgurung", // TODO: replace with your GitHub profile
+  email: "ashutoshgurung17.com", // TODO: replace with your real email
+  github: "https://github.com/ashutoshgurung/", // TODO: replace with your GitHub profile
   linkedin: "https://www.linkedin.com/in/ashutosh-gurung-a14ab1353/", // TODO: replace with your LinkedIn profile
   resumeUrl: "/resume.pdf", // TODO: drop your PDF at public/resume.pdf
 };
@@ -18,7 +18,6 @@ export type Project = {
   title: string;
   tagline: string;
   description: string;
-  
   /** Replace with your own screenshot: drop it in src/assets and import it here. */
   image: string;
   tech: string[];
@@ -34,179 +33,240 @@ export type Project = {
   };
 };
 
+
+
+  
 export const projects: Project[] = [
   {
     slug: "food-ordering-app",
-    title: "Food Ordering App",
-    tagline: "Restaurant discovery, cart and checkout in Flutter",
+    title: "VhokLayo",
+    tagline:
+      "A Flutter food ordering app with Firebase, admin management, and Khalti payment testing",
     description:
-      "A Flutter food ordering application focused on restaurant discovery, food browsing, cart management, checkout, authentication, and order management.",
+      "VhokLayo is a Flutter-based food ordering application designed to simplify food discovery and online ordering. It includes food browsing, search, cart management, checkout, authentication, and order management. The project uses Firebase Authentication and Cloud Firestore for backend services, Provider for state management, MVVM architecture for code organization, and Hive for local data storage. It also features an admin interface and a Khalti sandbox integration for testing the digital payment flow.",
     image: foodImg,
-    tech: ["Flutter", "Dart", "Firebase", "Firestore", "Provider", "MVVM", "Hive"],
+    tech: [
+      "Flutter",
+      "Dart",
+      "Firebase Authentication",
+      "Cloud Firestore",
+      "Provider",
+      "MVVM Architecture",
+      "Hive",
+      "Khalti Sandbox",
+    ],
     features: [
-      "Authentication",
-      "Restaurant browsing",
-      "Search",
-      "Hive storage",
-      "Cart",
-      "Checkout",
+      "User authentication",
+      "Food browsing and search",
+      "Shopping cart management",
+      "Checkout flow",
+      "Khalti sandbox payment integration",
+      "Payment flow testing",
       "Order management",
-      "Firebase / Firestore",
-      "Payment integration",
+      "Firebase Authentication",
+      "Cloud Firestore integration",
+      "Local data storage with Hive",
+      "Admin interface for food and order management",
     ],
     featured: true,
+    github:"https://github.com/ashutoshgurung/delivery-app",
     caseStudy: {
       overview:
-        "My most complete Flutter project so far — a full food ordering flow from signing in to placing and tracking an order, built on Firebase with a Provider + MVVM structure. I also integrated Hive to make frequently used data available locally and improve the experience for repeated use.",
+        "VhokLayo is a Flutter food ordering project that combines a customer ordering experience with administrative functionality. It uses Firebase services, Provider, MVVM architecture, Hive, and a Khalti sandbox integration to test the checkout payment flow.",
       problem:
-        "Ordering flows involve a lot of connected state: the signed-in user, the selected restaurant, the cart, and the order history. Keeping all of that consistent across screens is easy to get wrong.",
+        "A food ordering application involves connected workflows such as authentication, food discovery, cart management, checkout, payment handling, and order management. These features need to work together while keeping application state and data organized.",
       solution:
-        "I separated the app into views, view models and services. Provider exposes cart and auth state to the widget tree, while Firestore handles restaurants, menus and orders in real time. I also used Hive to cache selected data locally, so the app feels faster and remains more reliable when users revisit it offline or with a weak connection.",
+        "I organized the application using MVVM architecture and Provider for state management. Firebase Authentication and Cloud Firestore support authentication and cloud data management, while Hive provides local storage. I also integrated Khalti sandbox mode to test the payment flow without processing real transactions.",
       learned:
-        "How to structure a Flutter app with MVVM, model Firestore collections for real read patterns, and keep UI state predictable as the app grows. I also learned how Hive can be used to store frequently accessed data locally, which improves performance and gives users a smoother experience when the connection is unstable.",
+        "This project helped me improve my Flutter development skills, apply MVVM and Provider, integrate Firebase services, manage local data with Hive, and understand third-party payment gateway integration and sandbox payment testing.",
     },
   },
-  {
-  slug: "ecommerce-app",
-  title: "E-commerce App",
-  tagline: "A modern e-commerce shopping experience built with Flutter",
-  description:
-      "A Flutter e-commerce application featuring product browsing, product details, favourites, cart management, and Firebase authentication with Google Sign-In.",
-  image: ecommerceImg,
-  tech: ["Flutter", "Dart", "MVVM", "Provider", "Firebase"],
-  features: [
-    "Product browsing",
-    "Product detail screen",
-    "Favourite products",
-    "Add to cart",
-    "Firebase Authentication",
-    "Google Sign-In",
-  ],
-  caseStudy: {
-    overview:
-        "A Flutter e-commerce application built with MVVM architecture and Provider for state management, with Firebase Authentication and Google Sign-In for user authentication.",
-    problem:
-        "E-commerce applications need a simple shopping flow that allows users to easily explore products, view details, save favourites, and manage their cart.",
-    solution:
-        "I built a structured Flutter application using MVVM and Provider, with dedicated screens for product details, favourites, and cart management. Firebase Authentication and Google Sign-In were integrated to provide a secure and convenient login experience.",
-    learned:
-        "Through this project, I improved my understanding of MVVM architecture, Provider state management, Firebase Authentication, Google Sign-In, reusable Flutter widgets, and managing shopping-related app state.",
-  },
-},
-  {
-  slug: "spotify-app",
+
+
+
+
+{
+  slug: "spotify-clone",
   title: "Spotify Clone",
-  tagline: "A music streaming app with API-powered search and playback",
+  tagline: "A Flutter music app with API integration and background audio playback",
   description:
-      "A Flutter music streaming application built with REST API and MVVM, allowing users to search for music, discover songs, and listen to tracks through a clean and responsive interface.",
+    "A Spotify-inspired music application built with Flutter and Dart. The project combines REST API integration, audio playback, and Firebase Authentication with Provider-based state management and MVVM architecture. It uses just_audio for audio playback and just_audio_background for background listening, with a focus on maintainable code and a smooth user experience.",
   image: spotifyImg,
-  tech: ["Flutter", "Dart", "REST API", "MVVM"],
+  tech: [
+    "Flutter",
+    "Dart",
+    "Provider",
+    "MVVM Architecture",
+    "REST API",
+    "Firebase Authentication",
+    "just_audio",
+    "just_audio_background",
+    "RxDart",
+  ],
   features: [
-    "Music discovery",
-    "Search music",
-    "Search API integration",
-    "Music playback",
-    "Song browsing",
-    "Responsive UI",
+    "API-driven music content",
+    "Audio playback controls",
+    "Background audio playback",
+    "Playback progress tracking",
+    "Provider-based state management",
+    "MVVM architecture",
+    "Firebase Authentication",
+  ],
+  featured: false,
+  github: "https://github.com/ashutoshgurung/spotify",
+  caseStudy: {
+    overview:
+      "A Spotify-inspired music streaming interface developed with Flutter, integrating remote data, audio playback, and authentication using a structured application architecture.",
+    problem:
+      "Managing remote music data, audio playback, and player state requires clear separation of responsibilities and a responsive user interface.",
+    solution:
+      "I structured the application using MVVM architecture, managed state with Provider, integrated REST APIs using HTTP, and implemented audio functionality with just_audio and just_audio_background. Firebase Authentication supports the authentication flow.",
+    learned:
+      "This project strengthened my practical skills in Flutter development, REST API integration, audio playback, reactive streams, Firebase Authentication, and maintainable application architecture.",
+  },
+},
+{
+  slug: "ecommerce-app",
+  title: "E-Commerce App",
+  tagline: "A Flutter shopping app with product browsing and cart management",
+  description:
+    "A Flutter e-commerce app built with Dart and Provider, featuring product browsing, product details, and cart state management. The project uses an MVVM-based structure to keep the UI and application logic organised.",
+  image: ecommerceImg,
+  tech: ["Flutter", "Dart", "Provider", "MVVM"],
+  features: [
+    "Browse available products",
+    "View product details",
+    "Manage cart state with Provider",
+    "Reusable widgets and organised project structure",
+  ],
+  github: "https://github.com/ashutoshgurung/ecommerce",
+  caseStudy: {
+    overview:
+      "I built this Flutter e-commerce app to practise developing a shopping experience with a clear and organised code structure. The project focuses on product browsing, product details, and cart state management using Provider.",
+    problem:
+      "Keeping the UI, application logic, and state management organised can become challenging as an app grows. I wanted to structure the project so each part would be easier to understand and maintain.",
+    solution:
+      "I used an MVVM-based structure to separate the UI from application logic and Provider to manage cart-related state. I also organised the code into reusable widgets to make the interface easier to maintain.",
+    learned:
+      "I improved my understanding of Flutter UI development, Provider state management, reusable widgets, and separating presentation code from application logic.",
+  },
+
+
+
+},
+  {
+  slug: "news-app",
+  title: "News App",
+  tagline: "Stay informed with a clean, API-powered news experience",
+  description:
+    "A Flutter news application built with Dart, featuring REST API integration to retrieve news articles and Provider for state management. The app follows MVVM architecture to separate UI components from application logic, keeping the codebase organized, maintainable, and easy to extend.",
+  image: newsImg,
+  tech: [
+    "Flutter",
+    "Dart",
+    "Provider",
+    "MVVM Architecture",
+    "REST API",
+    "HTTP",
+    "JSON",
+  ],
+  features: [
+    "API-powered news articles",
+    "Dynamic news content",
+    "Provider-based state management",
+    "MVVM architecture",
+    "JSON data handling",
+    "Organized and maintainable code",
   ],
   caseStudy: {
     overview:
-        "A Spotify-inspired Flutter application focused on music discovery and playback, using REST APIs to fetch music data and MVVM architecture to keep the application structured.",
+      "A Flutter-based news application designed to present news articles through a clean interface, using REST APIs to retrieve content and MVVM architecture to organize the application.",
     problem:
-        "Finding specific songs quickly can be difficult when music content is not organized with an efficient search experience.",
+      "Displaying news from a remote API requires handling network requests, parsing JSON responses, and keeping the interface responsive while separating data and presentation logic.",
     solution:
-        "I built a clean music interface where users can browse songs, search for specific music using a search API, and tap on a track to listen to it. MVVM architecture was used to separate the UI from application logic and API-related operations.",
+      "I integrated a REST API to retrieve news content, used Provider to manage application state, and followed MVVM architecture to separate the UI from business and data logic.",
     learned:
-        "Through this project, I improved my understanding of REST API integration, MVVM architecture, API-based search, handling dynamic music data, and implementing music playback in Flutter.",
+      "This project strengthened my understanding of REST API integration, asynchronous programming, JSON parsing, Provider state management, and MVVM architecture in Flutter.",
   },
 },
-  {
-    slug: "News-App",
-    title: "News App",
-    tagline: "Stay updated with the latest news in a clean Flutter application",
-    description:
-      "A Flutter news application that allows users to browse the latest news by category and read articles through a simple and responsive interface.",
-    image: newsImg,
-    tech: ["Flutter", "Dart", "REST API"],
-    features: [
-  "Latest news",
-  "Category-based browsing",
-  "API integration",
-  "Responsive UI",
-],
-    caseStudy: {
-      overview:
-        "A clean and responsive news app built with Flutter, featuring real-time news fetching, category-based browsing, and a simple reading experience.",
-      problem:
-        "Finding and browsing relevant news can be difficult when information is spread across different sources and presented in cluttered interfaces.",
-      solution:
-        "I built a simple and focused news interface that allows users to browse the latest articles by category and quickly access the information they are interested in.",
-      learned:
-      "Through this project, I improved my understanding of REST API integration, handling dynamic data in Flutter, category-based content browsing, and creating clean user-friendly interfaces.",
-    },
+
+{
+  slug: "netflix-clone",
+  title: "Netflix Clone",
+  tagline:
+    "A Netflix-inspired Flutter app with movie browsing and video playback",
+  description:
+    "A Netflix-inspired mobile application built with Flutter and Dart. The app features a dark streaming-style interface, horizontally scrollable movie collections, movie details, and video playback. Provider is used for state management and sharing the selected movie between screens. The project focuses on building a familiar streaming experience with reusable UI components and organized application code.",
+  image: netflixImg,
+  tech: [
+    "Flutter",
+    "Dart",
+    "Provider",
+    "MVVM Architecture",
+    "Video Playback",
+  ],
+  github: "https://github.com/ashutoshgurung/Netflix_app",
+  features: [
+    "Netflix-inspired dark user interface",
+    "Horizontally scrollable movie collections",
+    "Movie details and genre information",
+    "Video playback using remote MP4 URLs",
+    "Provider-based selected movie state",
+    "Navigation between movie and detail screens",
+    "Profile and additional settings screen",
+  ],
+  featured: false,
+  caseStudy: {
+    overview:
+      "A Netflix-inspired mobile application developed with Flutter, featuring movie collections, a movie details screen, and remote video playback.",
+    problem:
+      "Creating a streaming-style interface requires organizing movie content into clear sections, providing smooth navigation between screens, and integrating video playback into the user experience.",
+    solution:
+      "I created a dark-themed interface with horizontally scrollable movie collections, implemented movie selection using Provider, and connected the selected movie to its detail screen. I also integrated remote MP4 video playback to test the viewing experience.",
+    learned:
+      "This project helped me improve my Flutter UI development, state management with Provider, screen navigation, model-based data handling, and video playback troubleshooting.",
   },
-  {
-    slug: "futsal-booking-app",
-    title: "FUTBOOK — Futsal Booking App UI",
-    tagline: "A mobile futsal booking app UI designed with Flutter and Firebase Authentication",
-    description:
-      "A mobile futsal booking app UI designed with Flutter, featuring a clean booking experience and Firebase Authentication for secure user sign-in.",
-    image: futsalImg,
-    tech: ["Flutter", "Dart", "Firebase Authentication"],
-    features: [
-      "User registration and login",
-      "Firebase Authentication",
-      "Futsal venue browsing",
-      "Venue details",
-      "Booking flow UI",
-      "Slot selection UI",
-      "Clean and responsive interface",
-      "Intuitive navigation",
-    ],
-    caseStudy: {
-      overview:
-        "FUTBOOK is a futsal booking app concept designed to make it easier for users to discover futsal venues and navigate the booking process. I focused on designing and developing the user interface and frontend experience using Flutter, with Firebase Authentication integrated for user login and registration.",
-      problem:
-        "Finding and booking futsal venues can involve multiple steps and an unclear user experience. I wanted to create a simple and organized interface where users can easily explore venues and move through the booking flow.",
-      solution:
-        "I designed a clean and user-friendly booking experience with a focus on simple navigation, clear information, and intuitive interactions. The frontend was developed in Flutter, while Firebase Authentication was used to handle user sign-up and login.",
-      learned:
-        "Through this project, I improved my understanding of Flutter UI development, navigation, authentication integration, and creating a structured user experience for a real-world booking application.",
-    },
-  },
+},
+
 ];
 
 export const skillGroups = [
-  { title: "Mobile Development", items: ["Flutter", "Dart", "Responsive UI"] },
-  { title: "Backend & Database", items: ["Firebase", "Cloud Firestore", "Firebase Auth", "Google Sign-In"] },
-  { title: "Architecture & Development", items: ["Provider", "MVVM", "REST APIs", "Hive", "Git", "GitHub"] },
-  { title: "Design", items: ["Figma"] },
+  { title: "Mobile Development", items: ["Flutter", "Dart", "Material Design", "Responsive UI"] },
+  { title: "Backend & Database", items: ["Firebase Auth","Cloud Firestore","REST APIs",] },
+  {
+    title: "Architecture & State Management",
+    items: ["Provider", "MVVM", "Clean Architecture", "BLoC Architecture", "Local Storage (Hive, SharedPreferences)"],
+  },
+  { title: "Design", items: ["UI/UX Design", "Figma"] },
 ];
 
 export const journey = [
-  { title: "Education BCIS", body: "Building a foundation in computer science, programming, and information systems." },
+  {
+    title: "BCIS Education",
+    body: "Developed a strong foundation in computing, software development, and information systems through my Bachelor's studies in Computing and Information Systems.",
+  },
   {
     title: "Learning Flutter & Dart",
-    body: "Developing responsive and user-friendly mobile applications with Flutter and Dart.",
-  },
-  {
-    title: "Backend & API Integration",
-    body: "Working with Firebase, Firestore, Authentication, and REST APIs to connect apps with backend services.",
-  },
-  {
-    title: "Developing Design Skills",
-    body: "Applying design principles to create clean and intuitive digital experiences.",
+    body: "Specialized in Flutter and Dart to build cross-platform mobile applications, strengthen programming fundamentals, and develop practical problem-solving skills.",
   },
   {
     title: "Building Real-World Projects",
-    body: "Turning ideas into practical applications while learning through real development challenges.",
+    body: "Applied my knowledge by developing projects across food ordering, music streaming, news, e-commerce, and other mobile application domains.",
   },
   {
-    title: "Internship at Nep Tech Pal",
-    body: "Gaining hands-on experience in a professional development environment.",
+    title: "Flutter Developer Internship at Nep Tech Pal",
+    body: "Gained professional experience as a Flutter Developer Intern, strengthening my mobile development skills and gaining exposure to professional development workflows.",
   },
   {
-    title: "Building My Professional Portfolio",
-    body: "Showcasing my projects, skills, and growth as I prepare for the next step in my career.",
+    title: "Backend Integration & State Management",
+    body: "Worked with Firebase Authentication, Cloud Firestore, REST API integration, Provider, and BLoC to build structured and maintainable Flutter applications.",
+  },
+  {
+    title: "UI/UX Design & Development",
+    body: "Explored Figma and focused on building intuitive interfaces, consistent layouts, and user-friendly experiences for mobile applications.",
+  },
+  {
+    title: "Professional Growth & Career Development",
+    body: "Continuously improving my technical skills, refining my portfolio, and pursuing opportunities to contribute as a Junior Flutter Developer.",
   },
 ];

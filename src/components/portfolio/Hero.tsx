@@ -3,7 +3,7 @@ import { profile } from "@/data/portfolio";
 import { actionClass } from "./action";
 import { Reveal } from "./Section";
 
-const stack = ["Flutter", "Dart", "Firebase", "Firestore", "REST APIs", "Provider", "MVVM"];
+const stack = ["Flutter", "Dart", "Firebase", "Provider", "MVVM", "Figma", "BLoC Architecture"];
 
 export function Hero() {
   return (
@@ -20,7 +20,7 @@ export function Hero() {
                 <span className="absolute inline-flex size-full animate-ping rounded-full bg-accent opacity-70" />
                 <span className="relative inline-flex size-1.5 rounded-full bg-accent" />
               </span>
-              Building Flutter apps &amp; growing as a Developer
+              Currently building &amp; learning
             </span>
           </Reveal>
 
@@ -33,8 +33,8 @@ export function Hero() {
 
           <Reveal delay={120}>
             <p className="mt-6 max-w-lg text-base leading-relaxed text-muted-foreground sm:text-lg">
-              I build clean, responsive mobile experiences with Flutter and enjoy turning ideas into simple, intuitive
-              digital products.
+              I build clean, responsive, and user-friendly cross-platform mobile applications using Flutter and Dart,
+              with a strong focus on practical functionality and polished experiences.
             </p>
           </Reveal>
 
@@ -85,11 +85,10 @@ export function Hero() {
   final study = 'BCIS';
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext c) {
     return Portfolio(
-      builds: mobileApplications,
-      stack: firebaseAndAPIs,
-      architecture: providerAndMVVM,
+      builds: mobileApps,
+      cares: aboutDesign,
     );
   }
 }`}</code>

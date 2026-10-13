@@ -188,7 +188,7 @@ Write authentic content based on:
 
 - I have experience with REST APIs.
 
-- I also work with Firebase, Cloud Firestore, Firebase Auth, Google Sign-In, and Hive.
+- I also have experience with Laravel and MySQL.
 
 - I am interested in UI/UX design and creating clean interfaces.
 
@@ -212,17 +212,15 @@ Mobile Development:
 
 - Dart
 
-- Responsive UI
-
 Backend & Database:
 
 - Firebase
 
-- Cloud Firestore
+- Firestore
 
-- Firebase Auth
+- Laravel
 
-- Google Sign-In
+- MySQL
 
 Architecture & Development:
 
@@ -231,8 +229,6 @@ Architecture & Development:
 - MVVM
 
 - REST APIs
-
-- Hive
 
 - Git
 
@@ -380,15 +376,13 @@ A web-based futsal booking system designed to simplify futsal discovery and book
 
 Technologies:
 
-Flutter
+Laravel
 
-Firebase Auth
+Blade
 
-Google Sign-In
+MySQL
 
-Hive
-
-Dart
+Tailwind CSS
 
 IMPORTANT:
 
@@ -442,7 +436,7 @@ Building Real Projects
 
 ↓
 
-Internship at Nep Tech Pal (3 months)
+Learning Firebase & Backend Technologies
 
 ↓
 

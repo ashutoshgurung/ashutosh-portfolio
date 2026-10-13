@@ -1,12 +1,11 @@
 import { Reveal, Section } from "./Section";
 
 const points = [
-  "Flutter & Dart as my main stack",
-  "Firebase and Cloud Firestore for app data",
-  "Firebase Auth with Google Sign-In",
-  "Hive for local storage",
-  "Provider + MVVM for structure",
-  "Design in Figma",
+  "Mobile app development with Flutter & Dart",
+  "Material Design + responsive UI systems",
+  "Firebase and REST API integration",
+  "BLoC and Provider for state management",
+  "MVVM, Clean Architecture, BLoC Architecture, and local storage",
 ];
 
 export function About() {
@@ -15,18 +14,21 @@ export function About() {
       <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr]">
         <Reveal className="space-y-5 text-base leading-relaxed text-muted-foreground">
           <p>
-            I&apos;m a BCIS student and Flutter Developer, focused on building clean, functional, and
-            user-friendly mobile applications. Most of my time goes into Flutter and Dart — building applications,
-            breaking them, and rebuilding them better.
+            I&apos;m a Flutter Developer passionate about building clean, responsive, and user-friendly cross-platform
+            mobile applications. I work with Flutter and Dart to turn ideas into practical, functional experiences for
+            real users.
           </p>
           <p>
-            I&apos;ve worked with Firebase, Cloud Firestore, Firebase Authentication, Google Sign-In, Hive, REST APIs,
-            Provider, and MVVM to build and structure Flutter applications.
+            My work includes Firebase setup, REST API integration, and building scalable mobile
+            products with strong app structure. I use BLoC and Provider for state management, and
+            MVVM, Clean Architecture, and BLoC Architecture to keep code maintainable. Hive and
+            SharedPreferences support efficient local data storage.
           </p>
           <p>
-            I&apos;m also developing my UI/UX skills because I believe a good mobile application should not only work
-            well, but also be simple and enjoyable to use.
+            I&apos;m always learning, improving my problem-solving skills, and building practical projects that focus on
+            reliability, performance, and clean user experiences.
           </p>
+          <p className="text-foreground">I enjoy creating apps that are useful, polished, and built to last.</p>
         </Reveal>
 
         <Reveal delay={100}>
